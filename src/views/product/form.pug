@@ -1,0 +1,10 @@
+html
+  head
+    title Formulário de coisas
+  body
+    h1 Formulário de coisas
+    a(href='/products') Listagem de coisas
+    form(action='/products/create',method='post')
+      label Nome do que você deseja salvar
+        input(name='name',required,type='text')
+      button(type='submit') Salvar
